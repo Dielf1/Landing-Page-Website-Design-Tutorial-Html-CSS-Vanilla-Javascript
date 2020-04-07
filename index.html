@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>hello word<br>I'm <span>Dimitri Muzalev</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi saepe aliquid porro sit, necessitatibus voluptas repudiandae rerum fugiat eligendi nesciunt rem magnam. Vitae tempora incidunt consequuntur voluptate officiis, cupiditate ullam.</p>
+            <a href="#">Know more</a>
+        </div>
+        
+
+        <ul class="web">
+            <li><img src="html.png" alt=""></li>
+            <li><img src="css.png" alt=""></li>
+            <li><img src="js.png" alt=""></li>
+
+
+        </ul>
+
+
+    </section>
+
+
+    <div id="navigation">
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Service</a></li>
+        <li><a href="">Produce</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Contact</a></li>
+
+    </ul>
+    </div>
+<script type="text/javascript">
+  function toggle () {
+      var sec = document.getElementById('sec');
+      var nav = document.getElementById('navigation');
+      sec.classList.toggle('active');
+      nav.classList.toggle('active')
+  }
+
+</script>
+</body>
+</html>
